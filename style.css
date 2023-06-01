@@ -1,8 +1,66 @@
 :root {
+    margin: 0;
+    padding: 0;
     --azul: #1D2F57;
     --black: #000000;
     --white: #ffffff;
     --amareloclaro: #E8CC75;
     --amarelomedio: #D3A740;
-    --amareloescuro: #D19B43;
+    --amareloescuro: #d19b43;
+} 
+
+/* NAVBAR */
+.nav-bar {
+    background-color: var(--azul);
+    height: 105px;
+    width: 100vw;
+
+}
+.icons {
+    width: 100%;
+    padding: 0 30px 0 30px;
+}
+.icons div {
+    z-index: 10;
+    
+}
+.linhas {
+    width: 100%;
+    max-height: 10px;
+}
+.splash {
+    top: -100px;
+    left: -124px;
+}
+.onda-azul {
+    width: 100%;
+    max-height: 95px;
+}
+/* RODAPE */
+.rodape {
+    background-color: var(--azul);
+    width: 100vw;
+}
+.rodape-redes h3 {
+    color: var(--white);
+}
+.rodape-horarios h3{
+    color: var(--amarelomedio);
+}
+.rodape-horarios p {
+     color: var(--amareloclaro);
+}
+
+
+
+/* HOME */
+.corpo {
+    height: 300vh;
+    background-color: var(--amareloclaro);
+}
+.epocas-dia div {
+    height: 100vh;
+}
+.noite h2 {
+    color: var(--white);
 }
