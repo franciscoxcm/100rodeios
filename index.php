@@ -21,12 +21,12 @@
     <title>100Rodeios</title>
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
     <header>
         <?php require_once("nav-bar.php") ?>
     </header>
     <div class="body">
-        <?php require_once("home.php") ?>
+        <?php require_once("contactos.php") ?>
     </div>
     <footer>
         <?php require_once("rodape.php") ?>

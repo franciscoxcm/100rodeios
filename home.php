@@ -1,8 +1,8 @@
 <div class="uk-section uk-padding-remove uk-grid-collapse corpo" data-uk-grid>
-    <div class="uk-width-auto@m" data-uk-grid>
+    <div class="uk-width-auto@m">
         <img src="img/linha-sol.svg" alt="">
     </div>
-    <div class="uk-width-expand@m epocas-dia" data-uk-grid>
+    <div class="uk-width-expand@m epocas-dia">
         <div class="manha">
             <h2>A nossa Manhâ</h2>
         </div>
