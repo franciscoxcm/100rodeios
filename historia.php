@@ -1,3 +1,6 @@
+<?php require_once("inicio.php") ?>
+<?php require_once("nav-bar.php") ?>
+
 <div class="uk-section fundo-claro">
     <div class="uk-padding-large uk-text-center">
         <h3><b>A Nossa História</b></h3>
@@ -12,3 +15,5 @@
     </div>
 </div>
 <div class="uk-position-relative"><img class="uk-position-bottom onda-azul-historia" src="img/onda-azul-bottom-historia.png" alt=""></div>
+
+<?php require_once("rodape.php") ?>

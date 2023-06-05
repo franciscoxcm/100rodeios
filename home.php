@@ -1,3 +1,6 @@
+<?php require_once("inicio.php") ?>
+<?php require_once("nav-bar.php") ?>
+
 <div class="uk-section uk-padding-remove uk-grid-collapse corpo" data-uk-grid>
     <div class="uk-width-auto@m">
         <img src="img/linha-sol.svg" alt="">
@@ -14,3 +17,5 @@
         </div>
     </div>
 </div>
+
+<?php require_once("rodape.php") ?>

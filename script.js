@@ -1,10 +1,22 @@
 gsap.registerPlugin(ScrollTrigger);
 
+const menu = document.getElementById("menu");
 // NAVBAR
-gsap.from('.nav-bar', { duration: 1, y: '-100%', ease: 'bounce'})
-gsap.from('.icons', {duration: 1, opacity: 0, delay: 1})
-gsap.from('.splash', {duration: 3, scale: 0, delay: 2})
-gsap.from('.onda-azul-topo', {duration: 3, height: 0, delay: 1})
+gsap.from('.nav-bar', { duration: 1, y: '-100%', ease: 'bounce'});
+gsap.from('.icons', {duration: 1, opacity: 0, delay: 1});
+gsap.from('.splash', {duration: 2, scale: 0, delay: 1});
+gsap.from('.onda-azul-topo', {duration: 2, height: 0, delay: 1});
+
+const tl = gsap.timeline({ paused: true, reversed: true });
+tl.fromTo('.menu-lateral', {x: -500}, {duration: 1, x: 0, ease: 'circ.out'});
+menu.addEventListener('click', function () {
+    if (tl.reversed()) {
+        tl.play();
+    } else {
+        tl.reverse();
+    }
+})
+
 
 // CORPO
 // gsap.to('.corpo', {

@@ -81,31 +81,7 @@ h3, p {
 }
 
 /* HORARIO */
-/* .onda-horario-conteudo { 
-    background-image: url(img/metodos-de-pagamento.png);
-    background-repeat: no-repeat ;
-    background-size: cover;
-    background-color: var(--azul);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.onda-horario::before{
-    content: "";
-    background-image: url(img/horario/metodos-pagamento-fina.svg);
-    background-size: 100vw 219px;
-    display: inline-block;
-    width: 100vw;
-    height: 220px;
-    background-repeat: no-repeat;
-}
-.pagamento {
-    color: var(--amareloclaro);
-}
-.cor-azul {
-    color: var(--azul);
-} */
+
 
 .pagamento {
     color: var(--amareloclaro);
@@ -114,4 +90,16 @@ h3, p {
 .onda-horario {
     width: 100vw;
     max-height: 387px;
+}
+
+/* MENU LATERAL */
+.menu-lateral {
+    z-index: 1000;
+    background-color: var(--azul);
+    height: calc(100vh - 105px); /* o calc faz a conta em varias escalas */
+    width: 40vw;
+    gap: 6%;
+}
+.menu-lateral a {
+    color: var(--amareloclaro);
 }
