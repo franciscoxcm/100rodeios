@@ -1,5 +1,6 @@
 <!-- RODAPÉ -->
 </body>
+
 <footer>
 <section class="uk-section rodape uk-text-center ">
 
@@ -16,7 +17,7 @@
                 <div><a href="#"><img src="img/rodape/facebook.png" alt=""></a></div>
             </div>
         </div>
-        <div class="uk-margin-large"><a href="#"><img src="img/rodape/Logo-Principal.png" alt=""></a></div>
+        <div class="uk-margin-large"><a href="home.php"><img src="img/rodape/Logo-Principal.png" alt=""></a></div>
     </div>
 </section>
 </footer>

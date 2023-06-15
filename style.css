@@ -7,8 +7,9 @@
     --amareloclaro: #E8CC75;
     --amarelomedio: #D3A740;
     --amareloescuro: #d19b43;
+    
 }
-body{
+ body{
     background-color: var(--amareloclaro);
 } 
 h3, p {
@@ -18,7 +19,7 @@ h3, p {
 /* NAVBAR */
 .nav-bar {
     background-color: var(--azul);
-    height: 105px;
+    height: 70px;
     width: 100vw;
 
 }
@@ -40,7 +41,7 @@ h3, p {
 }
 .onda-azul-topo {
     width: 100%;
-    max-height: 95px;
+    max-height: 75px;
 }
 /* RODAPE */
 .rodape {
@@ -61,14 +62,25 @@ h3, p {
 
 /* HOME */
 .corpo {
-    height: 300vh;
+    
     background-color: var(--amareloclaro);
 }
-.epocas-dia div {
-    height: 100vh;
+.epocas-dia img {
+    border: #1D2F57 0.1px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 10px var(--azul)
+}
+.epocas-dia svg {
+    border: #1D2F57 0.1px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 10px var(--azul)
 }
 .noite h2 {
     color: var(--white);
+}
+.linha-tempo {
+    
+    /* height: 70vh; */
 }
 
 /* HISTORIA */
@@ -76,9 +88,15 @@ h3, p {
     background-color: var(--amareloclaro);
 }
 .onda-azul-historia {
-    width: 100%;
+    width: 100vw;
     max-height: 95px;
 }
+.slider {
+    height: 70vh;
+    width: 100vw;
+    background-color: var(--amareloescuro);
+}
+
 
 /* HORARIO */
 
@@ -94,12 +112,18 @@ h3, p {
 
 /* MENU LATERAL */
 .menu-lateral {
-    z-index: 1000;
+    z-index: 100;
     background-color: var(--azul);
-    height: calc(100vh - 105px); /* o calc faz a conta em varias escalas */
+    height: calc(100vh - 70px); /* o calc faz a conta em varias escalas */
     width: 40vw;
     gap: 6%;
 }
 .menu-lateral a {
     color: var(--amareloclaro);
+}
+.filtro-escuro{
+    height: 100vh;
+    width: 100vw;
+    background-color: #00000079;
+    z-index: 99;
 }

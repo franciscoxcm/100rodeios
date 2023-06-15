@@ -1,33 +1,15 @@
-<svg width="360" height="364" viewBox="0 0 360 364" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="360" height="315" viewBox="0 0 360 315" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_633_1113)">
-<path d="M0 0.248901H194.634H360" stroke="url(#paint0_radial_633_1113)" stroke-width="2"/>
-<path d="M0 10.2489H194.634H360" stroke="url(#paint1_radial_633_1113)" stroke-width="7"/>
 <g clip-path="url(#clip1_633_1113)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M537.679 364.802C552.686 144.226 436.064 260.955 377.031 162.46C293.576 23.2182 190.761 154.527 102.692 97.7264C-127.38 -49.6579 -77.4194 189.938 -77.4194 189.938L-61.0261 364.401L537.679 364.802Z" fill="#1D2F57"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M537.679 315C552.686 94.4241 436.064 211.153 377.031 112.658C293.576 -26.5836 190.761 104.726 102.692 47.9246C-127.38 -99.4597 -77.4194 140.137 -77.4194 140.137L-61.0261 314.599L537.679 315Z" fill="#1D2F57"/>
 </g>
 </g>
 <defs>
-<radialGradient id="paint0_radial_633_1113" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180.003 0.783204) scale(152.065 0.844789)">
-<stop stop-color="#CFA340"/>
-<stop offset="0.04" stop-color="#D1A746"/>
-<stop offset="0.22" stop-color="#DBB960"/>
-<stop offset="0.37" stop-color="#E1C470"/>
-<stop offset="0.5" stop-color="#E4C876"/>
-<stop offset="0.88" stop-color="#CFA340"/>
-</radialGradient>
-<radialGradient id="paint1_radial_633_1113" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180.003 10.7832) scale(152.065 0.844789)">
-<stop stop-color="#CFA340"/>
-<stop offset="0.04" stop-color="#D1A746"/>
-<stop offset="0.22" stop-color="#DBB960"/>
-<stop offset="0.37" stop-color="#E1C470"/>
-<stop offset="0.5" stop-color="#E4C876"/>
-<stop offset="0.88" stop-color="#CFA340"/>
-</radialGradient>
 <clipPath id="clip0_633_1113">
-<rect width="621" height="363.553" fill="white" transform="translate(-130.5 0.447144)"/>
+<rect width="621" height="313.751" fill="white" transform="translate(-130.5 0.447144)"/>
 </clipPath>
 <clipPath id="clip1_633_1113">
-<rect width="621" height="313.751" fill="white" transform="translate(-130.5 50.2489)"/>
+<rect width="621" height="313.751" fill="white" transform="translate(-130.5 0.447144)"/>
 </clipPath>
 </defs>
 </svg>

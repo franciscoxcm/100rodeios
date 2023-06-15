@@ -1,11 +1,13 @@
 <?php require_once("inicio.php") ?>
-<?php require_once("nav-bar.php") ?>
 
-<div class="uk-section fundo-claro">
+<div class="fundo-claro">
+<?php require_once("nav-bar.php") ?>
+    <video class="video" autoplay>
+        <source src="img/historia/historia.mp4" type="video/mp4">
+    </video>
     <div class="uk-padding-large uk-text-center">
         <h3><b>A Nossa História</b></h3>
     </div>
-    <div><img src="img/1-tango-torrada-caracois.png" alt=""></div>
     <div>
         <div class="uk-padding-large">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam delectus quos assumenda unde qui, omnis sed itaque sit dolorum fuga, repellat, tempora illum porro a doloribus? Delectus adipisci rerum pariatur?</p>
@@ -14,6 +16,35 @@
         </div>
     </div>
 </div>
-<div class="uk-position-relative"><img class="uk-position-bottom onda-azul-historia" src="img/onda-azul-bottom-historia.png" alt=""></div>
+<div class="uk-position-relative">
+    <!-- <img class="uk-position-bottom onda-azul-historia" src="img/historia/onda-azul-bottom-historia.svg" alt=""> -->
+    <img class="uk-position-bottom linhas" src="img/historia/linhas.png" alt="">
+</div>
 
 <?php require_once("rodape.php") ?>
+
+<script>
+    //Nav bar invisivel após load
+    const teste = document.getElementById("topo");
+
+    function tirar() {
+        teste.remove();
+    };
+    window.onload = tirar;
+
+
+    const topo = gsap.timeline({
+        paused: true,
+        reversed: true
+    });
+
+    window.onscroll = function() {
+        if (scrollY == 0) {
+            teste.remove();
+            console.log("Estás no topo");
+        } else {
+            </script><?php require_once("nav-bar.php") ?><script>
+            console.log("Não estás");
+        }
+    }
+</script>

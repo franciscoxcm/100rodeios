@@ -4,7 +4,7 @@
 <section class="uk-section uk-padding-remove-bottom">
     <div class="fundo-claro uk-position-relative">
         <div class="uk-padding-large uk-text-center">
-            <h3><b>Venha nos visitar!</b></h3>
+            <h3><b>Venha visitar-nos!</b></h3>
         </div>
         <div class="uk-padding-large">
             <div class="uk-padding-large uk-padding-remove-top uk-child-width-1-2 cor-azul uk-text-center" data-uk-grid>
@@ -15,7 +15,7 @@
                     <p><b>Quinta</b></p>
                     <p><b>Sexta</b></p>
                     <p><b>Sabado</b></p>
-                    <p><b>Domingo</b></p>
+                    <p><b>Domingo e Feriados</b></p>
                 </div>
                 <div>
                     <p><b>Encerrado</b></p>
@@ -24,7 +24,7 @@
                     <p><b>07H / 24H</b></p>
                     <p><b>07H / 24H</b></p>
                     <p><b>07H / 24H</b></p>
-                    <p><b>07H / 24H</b></p>
+                    <p><b>08H / 23H</b></p>
                 </div>
             </div>
         </div>
