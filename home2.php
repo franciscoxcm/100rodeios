@@ -4,7 +4,7 @@
 
 <div class="uk-section uk-padding-remove corpo">
 <div class="uk-position-relative">
-        <div class="uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:5; animation: pull; autoplay: true;  autoplay-interval: 10000; velocity: 0.1">
+        <div class="uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:5; animation: pull; autoplay: true;  autoplay-interval: 2000; velocity: 0.1">
 
             <ul class="uk-slideshow-items">
                 <li>
@@ -28,42 +28,41 @@
     </div>
     <div class="uk-section uk-container uk-padding-remove-left uk-padding-remove-top">
         <div class="uk-grid-collapse" data-uk-grid>
-            <div class="uk-width-1-6 uk-flex uk-flex-center uk-position-relative">
-                <img id="sol-lua" class="uk-position-absolute sol-lua" uk-sticky="offset: 200" src="img/hp/sol-cheio.svg" alt="">
-                <img class="uk-position-absolute linha-tempo" src="img/hp/linha-sol2.svg" alt="" > <!--uk-sticky="offset: 150"-->
+            <div class="uk-width-1-6 uk-flex uk-flex-center">
+                <img class="linha-tempo" src="img/hp/linha-sol2.svg" alt="" > <!--uk-sticky="offset: 150"-->
             </div>
             <div class="uk-width-expand uk-flex uk-flex-column uk-flex-center epocas-dia">
                 <div class="manha uk-margin-large-top">
                     <h2>A nossa Manhã</h2>
                     <div class="uk-child-width-1-2 uk-grid-small" data-uk-grid>
-                        <div class="teste"><img src="img/hp/cards/Pastel de Nata.png" alt=""></div>
+                        <div class="teste"><img src="img/hp/cards/Pastel de Nata.svg" alt=""></div>
                         <div><img src="img/hp/cards/Pastel de Nata.png" alt=""></div>
-                        <div><img src="img/hp/cards/Pastel de Nata.png" alt=""></div>
-                        <div><img src="img/hp/cards/Pastel de Nata.png" alt=""></div>
-                        <div><img src="img/hp/cards/Pastel de Nata.png" alt=""></div>
-                        <div><img src="img/hp/cards/Pastel de Nata.png" alt=""></div>
+                        <div><img src="img/hp/cards/Pastel de Nata.svg" alt=""></div>
+                        <div><img src="img/hp/cards/Pastel de Nata.svg" alt=""></div>
+                        <div><img src="img/hp/cards/Pastel de Nata.svg" alt=""></div>
+                        <div><img src="img/hp/cards/Pastel de Nata.svg" alt=""></div>
                     </div>
                 </div>
                 <div class="tarde uk-margin-large-top">
                     <h2>A nossa Tarde</h2>
                     <div class="uk-child-width-1-2 uk-grid-small" data-uk-grid>
-                        <div><img src="img/hp/cards/Pastel de Nata.png" alt=""></div>
-                        <div><img src="img/hp/cards/Pastel de Nata.png" alt=""></div>
-                        <div><img src="img/hp/cards/Pastel de Nata.png" alt=""></div>
-                        <div><img src="img/hp/cards/Pastel de Nata.png" alt=""></div>
-                        <div><img src="img/hp/cards/Pastel de Nata.png" alt=""></div>
-                        <div><img src="img/hp/cards/Pastel de Nata.png" alt=""></div>
+                        <div><img src="img/hp/cards/Pastel de Nata.svg" alt=""></div>
+                        <div><img src="img/hp/cards/Pastel de Nata.svg" alt=""></div>
+                        <div><img src="img/hp/cards/Pastel de Nata.svg" alt=""></div>
+                        <div><img src="img/hp/cards/Pastel de Nata.svg" alt=""></div>
+                        <div><img src="img/hp/cards/Pastel de Nata.svg" alt=""></div>
+                        <div><img src="img/hp/cards/Pastel de Nata.svg" alt=""></div>
                     </div>
                 </div>
                 <div class="noite uk-margin-large-top">
                     <h2>A nossa Noite</h2>
                     <div class="uk-child-width-1-2 uk-grid-small" data-uk-grid>
-                        <div><img src="img/hp/cards/Pastel de Nata.png" alt=""></div>
-                        <div><img src="img/hp/cards/Pastel de Nata.png" alt=""></div>
-                        <div><img src="img/hp/cards/Pastel de Nata.png" alt=""></div>
-                        <div><img src="img/hp/cards/Pastel de Nata.png" alt=""></div>
-                        <div><img src="img/hp/cards/Pastel de Nata.png" alt=""></div>
-                        <div><img src="img/hp/cards/Pastel de Nata.png" alt=""></div>
+                        <div><img src="img/hp/cards/Pastel de Nata.svg" alt=""></div>
+                        <div><img src="img/hp/cards/Pastel de Nata.svg" alt=""></div>
+                        <div><img src="img/hp/cards/Pastel de Nata.svg" alt=""></div>
+                        <div><img src="img/hp/cards/Pastel de Nata.svg" alt=""></div>
+                        <div><img src="img/hp/cards/Pastel de Nata.svg" alt=""></div>
+                        <div><img src="img/hp/cards/Pastel de Nata.svg" alt=""></div>
                     </div>
                 </div>
             </div>

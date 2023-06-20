@@ -105,7 +105,7 @@ gsap.to('.corpo', {
         trigger: ".tarde",
         start: "top bottom", //top-> posição do trigger alvo// bottom -> posição do ecra para dar match
         end: "bottom center",
-        markers: true,
+        // markers: true,
         scrub: true
     },
     duration: 0.5,
