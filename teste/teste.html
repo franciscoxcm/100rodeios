@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/MotionPathPlugin.min.js"></script>
+
+
+
+    <script src="script2.js" defer></script>
+
+    <link rel="stylesheet" href="style2.css">
+
+    <title>Document</title>
+
+</head>
+
+<body class="uk-flex uk-flex-middle uk-flex-around">
+    <div class="uk-flex uk-flex-middle uk-flex-center">
+        <svg id="menu" xmlns="http://www.w3.org/2000/svg" width="51" height="36" fill="none" style="overflow: visible;">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.64932 24C1.16462 24 -0.00887275 26.8325 2.00552 28.2871C8.27194 32.8122 16.5865 35.5 25.4445 35.5C34.3026 35.5 42.6171 32.8122 48.8835 28.2871C50.8979 26.8325 49.7244 24 47.2397 24C46.6172 24 46.0148 24.2064 45.5052 24.564C40.3122 28.2084 33.3477 30.5 25.4445 30.5C17.5413 30.5 10.5769 28.2084 5.3839 24.564C4.87431 24.2064 4.27187 24 3.64932 24Z"
+                fill="#E8CC75" />
+            <path id="menu-icon" fill-rule="evenodd" clip-rule="evenodd"
+                d="M19.2398 18C15.2778 18 14.4073 22.1532 18.3089 22.8427C20.7495 23.274 23.2726 23.5 25.8413 23.5C28.4101 23.5 30.9331 23.274 33.3738 22.8427C37.2753 22.1532 36.4049 18 32.4428 18C32.2338 18 32.0252 18.0173 31.8186 18.049C29.8999 18.3441 27.9025 18.5 25.8413 18.5C23.7801 18.5 21.7828 18.3441 19.8641 18.049C19.6574 18.0173 19.4488 18 19.2398 18Z"
+                fill="#E8CC75" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.04679 0C1.56208 0 0.388588 2.83249 2.40298 4.28712C8.66941 8.81224 16.984 11.5 25.842 11.5C34.7 11.5 43.0146 8.81224 49.281 4.28713C51.2954 2.83249 50.1219 0 47.6372 0C47.0147 0 46.4122 0.206389 45.9026 0.564008C40.7097 4.20835 33.7452 6.5 25.842 6.5C17.9388 6.5 10.9743 4.20835 5.78136 0.564008C5.27177 0.206389 4.66934 0 4.04679 0Z"
+                fill="#E8CC75" />
+        </svg>
+    </div>
+    <div class="uk-flex uk-flex-middle uk-flex-center">
+        <svg id="menu2" xmlns="http://www.w3.org/2000/svg" width="48" height="28" style="overflow: visible;">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.67426 16C0.181783 16 -0.994866 18.8354 1.03172 20.2864C7.09416 24.627 15.1081 27.1999 23.634 27.1999C32.1599 27.1999 40.1739 24.627 46.2363 20.2864C48.2629 18.8354 47.0863 16 44.5938 16C43.9723 16 43.3708 16.2049 42.8603 16.5593C37.8699 20.0234 31.2021 22.1999 23.634 22.1999C16.0659 22.1999 9.3981 20.0234 4.40776 16.5593C3.89725 16.2049 3.29571 16 2.67426 16Z"
+                fill="#E8CC75" />
+            <path id="linha2" fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.74329 7C7.16519 7 5.9572 9.87612 8.11473 11.2874C12.6265 14.2386 18.3714 15.9528 24.4007 15.9528C30.43 15.9528 36.1749 14.2386 40.6867 11.2874C42.8443 9.87612 41.6363 7 39.0582 7C38.4516 7 37.8626 7.18786 37.3459 7.50574C33.8916 9.63103 29.4475 10.9528 24.4007 10.9528C19.3539 10.9528 14.9098 9.63102 11.4556 7.50574C10.9389 7.18786 10.3499 7 9.74329 7Z"
+                fill="#E8CC75" />
+            <path id="linha3" fill-rule="evenodd" clip-rule="evenodd"
+                d="M17.4527 0C13.4907 0 12.6202 4.15317 16.5218 4.84266C18.9624 5.27397 21.4855 5.5 24.0542 5.5C26.623 5.5 29.146 5.27397 31.5867 4.84266C35.4882 4.15317 34.6178 0 30.6557 0C30.4467 0 30.2381 0.0172501 30.0315 0.0490271C28.1128 0.344123 26.1154 0.5 24.0542 0.5C21.993 0.5 19.9957 0.344123 18.077 0.0490271C17.8703 0.0172501 17.6617 0 17.4527 0Z"
+                fill="#E8CC75" />
+        </svg>
+    </div>
+
+</body>
+
+</html>

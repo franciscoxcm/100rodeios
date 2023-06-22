@@ -1,4 +1,5 @@
 <!-- RODAPÉ -->
+</div>
 </body>
 
 <footer>

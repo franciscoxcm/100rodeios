@@ -1,7 +1,12 @@
 <?php require_once("inicio.php") ?>
 
 <div class="fundo-claro">
-<?php require_once("nav-bar.php") ?>
+    <?php require_once("nav-bar.php") ?>
+    <div class="uk-margin-large-bottom">
+        <div class="uk-position-relative recuar" uk-sticky="offset: 70">
+            <img class="onda-azul-topo uk-position-top" src="img/nav-bar/onda-topo-azul.png" alt="">
+        </div>
+    </div>
     <video class="video" autoplay>
         <source src="img/historia/historia.mp4" type="video/mp4">
     </video>
@@ -39,12 +44,12 @@
     });
 
     window.onscroll = function() {
-        if (scrollY == 0) {
-            teste.remove();
-            console.log("Estás no topo");
-        } else {
-            </script><?php require_once("nav-bar.php") ?><script>
-            console.log("Não estás");
-        }
+            if (scrollY == 0) {
+                teste.remove();
+                console.log("Estás no topo");
+            } else {
+</script><?php require_once("nav-bar.php") ?><script>
+    console.log("Não estás");
+    }
     }
 </script>

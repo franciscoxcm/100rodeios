@@ -9,6 +9,24 @@
     --amareloescuro: #d19b43;
     
 }
+/************************************************ ABERTURA */
+.abertura {
+    background-color: var(--azul);
+    z-index: 101;
+    height: 100vh;
+    width: 100vw;
+}
+#div-abertura {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1D2F57;
+}
+.teste {
+    height: 60vh;
+    width: 60vw;
+}
+
+/****************************************************** FIXOS */
  body{
     background-color: var(--amareloclaro);
 } 
@@ -16,7 +34,7 @@ h3, p {
     color: var(--azul);
 }
 
-/* NAVBAR */
+/********************************************************* NAVBAR */
 .nav-bar {
     background-color: var(--azul);
     height: 70px;
@@ -43,7 +61,7 @@ h3, p {
     width: 100%;
     max-height: 75px;
 }
-/* RODAPE */
+/****************************************************** RODAPE */
 .rodape {
     background-color: var(--azul);
     width: 100vw;
@@ -60,30 +78,32 @@ h3, p {
 
 
 
-/* HOME */
+/************************************************************** HOME */
 .corpo {
     
     background-color: var(--amareloclaro);
 }
-.epocas-dia img {
-    border: #1D2F57 0.1px;
-    border-radius: 20px;
-    box-shadow: 6px 6px 10px var(--azul)
+.border {
+    overflow: hidden;
+    border: solid #1D2F57 1px;
+    border-radius: 10px;
+    /* box-shadow: #1D2F57 -3px -3px 7px 2px; */
 }
-.epocas-dia svg {
-    border: #1D2F57 0.1px;
-    border-radius: 20px;
-    box-shadow: 6px 6px 10px var(--azul)
+.border img {
+    width: 100%;
 }
 .noite h2 {
     color: var(--white);
 }
 .linha-tempo {
-    
-    /* height: 70vh; */
+    max-height: 100%;
+}
+.recuar {
+    z-index: 10 !important;
 }
 
-/* HISTORIA */
+
+/******************************************************* HISTORIA */
 .fundo-claro {
     background-color: var(--amareloclaro);
 }
@@ -98,7 +118,7 @@ h3, p {
 }
 
 
-/* HORARIO */
+/************************************************************* HORARIO */
 
 
 .pagamento {
@@ -110,7 +130,7 @@ h3, p {
     max-height: 387px;
 }
 
-/* MENU LATERAL */
+/********************************************************************** MENU LATERAL */
 .menu-lateral {
     z-index: 100;
     background-color: var(--azul);
@@ -126,4 +146,5 @@ h3, p {
     width: 100vw;
     background-color: #00000079;
     z-index: 99;
+    opacity: 1;
 }

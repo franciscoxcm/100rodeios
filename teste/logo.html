@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#E8CC75" />
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
 
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js"></script>
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css" />
 
-    <script src="script.js" defer></script>
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js"></script>
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/MotionPathPlugin.min.js"></script>
+        
 
-    <link rel="stylesheet" href="style.css">
-    <title>100Rodeios</title>
+    
+        <script src="script2.js" defer></script>
+    
+        <link rel="stylesheet" href="style2.css">
+
+    <title>Document</title>
+    
 </head>
-
-<body id="body" class="uk-position-relative" style="overflow-x: hidden;">
-<div id="div-abertura" class="uk-flex uk-flex-middle uk-flex-center uk-position-absolute">
-<svg class="teste" width="85" height="56" viewBox="0 0 85 56" fill="none" xmlns="http://www.w3.org/2000/svg" style="overflow: visible;">
+<body class="uk-flex uk-flex-middle uk-flex-center">
+    <div class="">
+        <svg class="teste" width="85" height="56" viewBox="0 0 85 56" fill="none" xmlns="http://www.w3.org/2000/svg" style="overflow: visible;">
             <!-- LINHA GRANDE BAIXO -->
             <path id="linha-grossa" d="M40.2293 55.8896C39.8528 55.7997 39.4655 55.8243 39.084 55.793C37.4881 55.6615 35.9044 55.4512 34.3339 55.1457C31.2335 54.5424 28.2349 53.6165 25.3453 52.3507C23.3757 51.4879 21.4843 50.481 19.6667 49.3369C16.5907 47.4002 13.8206 45.1007 11.3406 42.4626C9.14697 40.1292 7.24926 37.577 5.64205 34.8137C4.11357 32.1859 2.88961 29.4271 1.96655 26.5376C1.21452 24.1827 0.676524 21.7799 0.361597 19.3288C0.203228 18.0961 0.0896556 16.8607 0.0435025 15.6181C0.0258558 15.1462 0.00277923 14.6748 6.43401e-05 14.2025C-0.00174558 13.8804 0.032643 13.8487 0.357977 13.8482C1.96836 13.846 3.57919 13.846 5.19002 13.8482C5.51445 13.8482 5.55336 13.8854 5.55744 14.1985C5.56649 14.8864 5.58097 15.5734 5.62486 16.2604C5.70721 17.5526 5.85969 18.8359 6.07915 20.112C6.61534 23.2268 7.55243 26.22 8.88227 29.0925C10.0103 31.5297 11.3967 33.8153 13.0333 35.9524C14.303 37.6105 15.7061 39.151 17.2419 40.5711C19.5445 42.7001 22.0784 44.5152 24.8481 46.0087C28.3439 47.894 32.0525 49.1817 35.9696 49.879C37.2166 50.1013 38.4736 50.2534 39.7388 50.346C41.0148 50.4394 42.2912 50.4833 43.5686 50.4435C46.802 50.3428 49.9761 49.8598 53.0806 48.9491C55.419 48.263 57.6652 47.3545 59.8208 46.2278C62.1529 45.0086 64.3248 43.5535 66.3456 41.8771C67.4374 40.9714 68.47 40.0039 69.4482 38.9805C71.4907 36.8434 73.2491 34.497 74.7201 31.9403C76.4413 28.9485 77.7078 25.7786 78.5187 22.432C78.8915 20.8929 79.1607 19.3364 79.325 17.7611C79.4426 16.637 79.5177 15.5112 79.5159 14.3809C79.5159 14.2986 79.5146 14.2163 79.5205 14.1345C79.539 13.8939 79.577 13.8487 79.8259 13.8487C81.5507 13.8487 83.2751 13.854 85 13.8576V16.2613C84.9597 16.3696 84.9547 16.4823 84.9588 16.5954C84.9756 17.0794 84.9213 17.5598 84.8719 18.0393C84.6855 19.8481 84.3932 21.6399 83.9747 23.4111C83.0625 27.2743 81.6363 30.9407 79.6702 34.4008C77.6422 37.9688 75.1513 41.1838 72.1771 44.0344C71.0722 45.0931 69.9161 46.0923 68.7048 47.0294C65.6433 49.3986 62.3126 51.3103 58.719 52.7751C55.8276 53.9537 52.8395 54.8036 49.7562 55.3238C48.5178 55.5326 47.2721 55.6869 46.0192 55.7898C45.6486 55.8202 45.2717 55.8006 44.9061 55.8887H40.2293V55.8896Z" fill="url(#paint0_radial_698_1114)"/>
 
@@ -185,7 +187,5 @@
             </radialGradient>
             </defs>
             </svg>
-            
-    </div>
-</div>
-<div id="show-after">
+</body>
+</html>
