@@ -1,0 +1,152 @@
+:root {
+    margin: 0;
+    padding: 0;
+    --azul: #1D2F57;
+    --black: #000000;
+    --white: #ffffff;
+    --amareloclaro: #E8CC75;
+    --amarelomedio: #D3A740;
+    --amareloescuro: #d19b43;
+    
+}
+
+/************************************************ ABERTURA */
+.abertura {
+    background-color: var(--azul);
+    z-index: 101;
+    height: 100vh;
+    width: 100vw;
+}
+#div-abertura {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1D2F57;
+}
+.teste {
+    height: 60vh;
+    width: 60vw;
+}
+
+/****************************************************** FIXOS */
+ body{
+    background-color: var(--amareloclaro);
+} 
+h3, p {
+    color: var(--azul);
+}
+
+/********************************************************* NAVBAR */
+.nav-bar {
+    background-color: var(--azul);
+    height: 70px;
+    width: 100vw;
+
+}
+.icons {
+    width: 100%;
+    padding: 0 30px 0 30px;
+}
+.icons div {
+    z-index: 10;
+    
+}
+.linhas {
+    width: 100%;
+    max-height: 10px;
+}
+.splash {
+    top: -100px;
+    left: -124px;
+}
+.onda-azul-topo {
+    width: 100%;
+    max-height: 75px;
+}
+/****************************************************** RODAPE */
+.rodape {
+    background-color: var(--azul);
+    width: 100vw;
+}
+.rodape-redes h3 {
+    color: var(--white);
+}
+.rodape-horarios h3{
+    color: var(--amarelomedio);
+}
+.rodape-horarios p {
+     color: var(--amareloclaro);
+}
+
+
+
+/************************************************************** HOME */
+.corpo {
+    
+    background-color: var(--amareloclaro);
+}
+.border {
+    overflow: hidden;
+    border: solid #1D2F57 1px;
+    border-radius: 10px;
+    box-shadow: #1D2F57 -4px -4px 6px 3px;
+}
+.border img {
+    width: 100%;
+}
+.noite h2 {
+    color: var(--white);
+}
+.linha-tempo {
+    max-height: 100%;
+}
+.recuar {
+    z-index: 10 !important;
+}
+
+
+/******************************************************* HISTORIA */
+.fundo-claro {
+    background-color: var(--amareloclaro);
+}
+.onda-azul-historia {
+    width: 100vw;
+    max-height: 95px;
+}
+.slider {
+    height: 70vh;
+    width: 100vw;
+    background-color: var(--amareloescuro);
+}
+
+
+/************************************************************* HORARIO */
+
+
+.pagamento {
+    color: var(--amareloclaro);
+    background-color: #1D2F57; 
+}
+.onda-horario {
+    width: 100vw;
+    max-height: 387px;
+}
+
+/********************************************************************** MENU LATERAL */
+.menu-lateral {
+    z-index: 100;
+    background-color: var(--azul);
+    height: calc(100vh - 70px); /* o calc faz a conta em varias escalas */
+    width: 40vw;
+    gap: 6%;
+    
+}
+.menu-lateral a {
+    color: var(--amareloclaro);
+}
+.filtro-escuro{
+    height: 100vh;
+    width: 100vw;
+    background-color: #00000079;
+    z-index: 99;
+    opacity: 1;
+}

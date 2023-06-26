@@ -1,8 +1,8 @@
 <?php require_once("inicio.php") ?>
 <?php require_once("nav-bar.php") ?>
 
-<div class="uk-position-relative recuar" uk-sticky="offset: 70">
-        <img class="onda-azul-topo uk-position-top" src="img/nav-bar/onda-topo-azul.png" alt="">
+<div class="recuar" uk-sticky="offset: 70">
+        <img class="onda-azul-topo uk-position-top"  src="img/nav-bar/onda-topo-azul.png" alt="">
     </div>
 <section class="uk-section uk-padding-remove-bottom">
     <div class="fundo-claro uk-position-relative">
@@ -47,4 +47,4 @@
     </div>
 </section>
 
-<?php require_once("rodape.php") ?>
+<?php require_once("footer.php") ?>
