@@ -166,9 +166,14 @@ gsap.from('.border', {
     // markers: true,
     scrub: true
     },
+<<<<<<<< HEAD:estilos/hpscript.js
     duration: 5,
     boxShadow: "#1D2F57 0px 0px 0px 0px",
     ease: "Power4. easeOut",
+========
+    duration: 1,
+    boxShadow: "#1D2F57 -3px -3px 7px 2px",
+>>>>>>>> 749ffe3761bef9fcdb77b777461250bc79a9f3da:script.js
 })
 gsap.fromTo('.border', {
     boxShadow: "#1D2F57 -4px -4px 6px 3px",
@@ -180,11 +185,19 @@ gsap.fromTo('.border', {
         // markers: true,
         scrub: true
     },
+<<<<<<<< HEAD:estilos/hpscript.js
     duration: 3,
     boxShadow: "#E8CC75 5px -5px 10px 2px",
 })
 gsap.fromTo('.border', {                
     boxShadow: "#E8CC75 5px -5px 10px 2px",
+========
+    duration: 0.5,
+    boxShadow: "#E8CC75 3px -3px 7px 5px",
+})
+gsap.fromTo('.border', {                
+    boxShadow: "#E8CC75 3px -3px 7px 5px",
+>>>>>>>> 749ffe3761bef9fcdb77b777461250bc79a9f3da:script.js
 }, {
     scrollTrigger: {
         trigger: ".noite",
@@ -194,5 +207,10 @@ gsap.fromTo('.border', {
         scrub: true
     },
     duration: 0.5,
+<<<<<<<< HEAD:estilos/hpscript.js
     boxShadow: "#fff 4px 2px 10px 1px",
 })
+========
+    boxShadow: "#fff 2px 2px 7px 1px",
+})
+>>>>>>>> 749ffe3761bef9fcdb77b777461250bc79a9f3da:script.js
