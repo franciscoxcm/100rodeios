@@ -1,31 +1,63 @@
 
 gsap.registerPlugin(MotionPathPlugin);
 
-const menu = document.getElementById("menu");
-const menu2 = document.getElementById("menu2");
-const tl = gsap.timeline({ paused: true, reversed: true });
-tl.to("#menu-icon", {duration: 1, rotation: -1000, transformOrigin: 'bottom center', ease: "elastic.out(1, 0.3)"});
-// tl.to("#linha2", "#linha3", {duration:1 scale:2,})
+// const menu = document.getElementById("menu");
+// const menu2 = document.getElementById("menu2");
+// const tl1 = gsap.timeline({ paused: true, reversed: true });
+// const tl2 = gsap.timeline({ paused: true, reversed: true });
+// const tl3 = gsap.timeline({ paused: true, reversed: true });
+// tl1.to("#linha1", {duration:1.5, y: -50, opacity: 0, ease: "elastic.out(1, 0.3)"})
+// tl2.to("#linha2", {duration:1.5, y: 13, rotation: 50, transformOrigin: 'bottom center', ease: "back.inOut(4)"})
+// tl3.to("#linha3", {duration:1.5, x: 9,rotation: -50, transformOrigin: 'bottom center', ease: "back.inOut(4)"})
 
-
-menu.addEventListener('click', function () {
-    console.log("#menu-icon");
-    if (tl.reversed()) {
-        tl.play();
+// menu2.addEventListener('click', function () {
+//     if (tl1.reversed()) {
+//         tl1.play();
+//         tl2.play();
+//         tl3.play();
         
-    } else {
-        tl.reverse();        
-    }
-})
-
-
-gsap.effects.explode("#menu2", {
-    direction: "up", //can reference any properties that the author decides - in this case "direction".
-    duration: 3
-  });
+//     } else {
+//         tl1.reverse();   
+//         tl2.reverse();  
+//         tl3.reverse();    
+//     }
+// });
 
 
 
+// menu.addEventListener("click", function () {
+    
+//     var contar = 0;
+//     contar ++;
+//     console.log("contar");
+//     if (contar == 1) {
+//         const pesquisa = document.getElementById("pesquisa");
+//     const criardiv = document.createElement("div");
+//     const formulario = document.createElement("form");
+//     const input = document.createElement("input");
+
+
+//     pesquisa.appendChild(criardiv);
+//     criardiv.setAttribute("class", "uk-margin");
+//     criardiv.setAttribute("id", "pesquisa-pai");
+//     const pesquisaPai = document.getElementById("pesquisa-pai");
+//     pesquisaPai.appendChild(formulario);
+//     criardiv.setAttribute("class", "uk-search");
+//     criardiv.setAttribute("class", "uk-search-default");
+//     criardiv.setAttribute("id", "formulario");
+//     const formularioPai = document.getElementById("formulario");
+//     formularioPai.appendChild(input);
+//     input.setAttribute("class", "uk-search-input");
+//     input.setAttribute("type", "search");
+//     input.setAttribute("placeholder", "Search");
+//     input.setAttribute("aria-label", "Search");
+    
+//     } else {
+
+//     };
+    
+
+// })
 
 
 

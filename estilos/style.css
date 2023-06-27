@@ -9,6 +9,7 @@
     --amareloescuro: #d19b43;
     
 }
+
 /************************************************ ABERTURA */
 .abertura {
     background-color: var(--azul);
@@ -87,7 +88,7 @@ h3, p {
     overflow: hidden;
     border: solid #1D2F57 1px;
     border-radius: 10px;
-    /* box-shadow: #1D2F57 -3px -3px 7px 2px; */
+    box-shadow: #1D2F57 -4px -4px 6px 3px;
 }
 .border img {
     width: 100%;
@@ -137,6 +138,7 @@ h3, p {
     height: calc(100vh - 70px); /* o calc faz a conta em varias escalas */
     width: 40vw;
     gap: 6%;
+    
 }
 .menu-lateral a {
     color: var(--amareloclaro);

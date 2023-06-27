@@ -1,5 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
-
 //***************************LOGOOOOOOOOO************************ */
 // LINHAS
 gsap.fromTo("#linha-fina", { 
@@ -46,54 +44,19 @@ gsap.fromTo("#show-after", {
     delay: 4,
     duration: 1,
     opacity:1,
+    
 })
-
-
-
-
 // NAVBAR***********************************************************************
-gsap.from('.nav-bar', { duration: 1, y: '-100%', ease: "circ.in",delay: 4 });
+
+
+gsap.from('.nav-bar', { duration: 1, y: '-100%', ease: "circ.in",delay: 4 });//
 gsap.from('.icons', { duration: 1, opacity: 0, delay: 5 });
 gsap.from('.onda-azul-topo', { duration: 1, height: 0, delay: 5 });
 
 
 
-//MENU LATERAL****************************************************************
-const menu = document.getElementById("menu");
-const tl = gsap.timeline({ paused: true, reversed: true });
-tl.fromTo('.menu-lateral', { x: '-100%' }, { duration: 0.5, x: 0, ease: 'circ.out' });
 
-menu.addEventListener('click', function () {
-   
-    if (tl.reversed()) {
-        const body = document.getElementById('body');
-        const criarFundo = document.createElement("div");
-        tl.play();
-        body.appendChild(criarFundo);
-        criarFundo.setAttribute('class', 'filtro-escuro uk-position-absolute');
-        criarFundo.setAttribute('id', 'fundo-escuro');
-        var altura = window.scrollY;
-        document.getElementById('fundo-escuro').style.top = altura+"px";    
-        fundo.play();
-        // canselar scroll
-        scrollTop =
-            window.pageYOffset || document.documentElement.scrollTop;
-        scrollLeft =
-            window.pageXOffset || document.documentElement.scrollLeft,
 
-            // if any scroll is attempted,
-            // set this to the previous value
-            window.onscroll = function () {
-                window.scrollTo(scrollLeft, scrollTop);
-            };
-    } else {
-        tl.reverse();
-        document.getElementById("fundo-escuro").remove();
-        //ativar scrll
-        window.onscroll = function () { };
-        
-    }
-})
 
 
 //MUDAR O ICON DO SOL/LUA
@@ -101,7 +64,7 @@ menu.addEventListener('click', function () {
 gsap.to('#nascer-sol', {
     scrollTrigger: {
         trigger: ".tarde",
-        start: "center bottom", //top-> posição do trigger alvo// bottom -> posição do ecra para dar match
+        start: "top bottom", //top-> posição do trigger alvo// bottom -> posição do ecra para dar match
         end: "center center",
         // markers: true,
         scrub: true
@@ -115,33 +78,33 @@ gsap.fromTo('#sol-cheio', {
 }, {
 scrollTrigger: {
     trigger: ".tarde",
-    start: "center bottom", //top-> posição do trigger alvo// bottom -> posição do ecra para dar match
-    end: "bottom center",
+    start: "top bottom", //top-> posição do trigger alvo// bottom -> posição do ecra para dar match
+    end: "center center",
     // markers: true,
     scrub: true
     },
-    duration: .5,
+    duration: 5,
     opacity: 1,
 })
-gsap.to("#sol-cheio", {
+gsap.to("#apagar-sol", {
     scrollTrigger: {
         trigger: ".noite",
         start: "center bottom", //top-> posição do trigger alvo// bottom -> posição do ecra para dar match
-        end: "top center",
+        end: "center center",
         // markers: true,
         scrub: true
         },
         duration: 2,
         opacity: 0,
 })
-// //FAZ APARECER A LUA QUANDO CHEGA A NOITE
+//FAZ APARECER A LUA QUANDO CHEGA A NOITE
 gsap.fromTo('#lua', {
     opacity: 0,
 }, {
 scrollTrigger: {
     trigger: ".noite",
     start: "center bottom", //top-> posição do trigger alvo// bottom -> posição do ecra para dar match
-    end: "bottom center",
+    end: "bottom top",
     // markers: true,
     scrub: true
     },
@@ -167,12 +130,12 @@ gsap.to('.corpo', {
 gsap.to('.corpo', {
     scrollTrigger: {
         trigger: ".tarde",
-        start: "center bottom", //center-> posição do alvo// bottom -> posição do ecra para dar match
+        start: "top bottom", //center-> posição do alvo// bottom -> posição do ecra para dar match
         end: "bottom center",
         // markers: true,
         scrub: true
     },
-    duration: 0.5,
+    // duration: 3,
     backgroundColor: "#D19B43",
 })
 gsap.fromTo('.corpo', {                
@@ -185,41 +148,31 @@ gsap.fromTo('.corpo', {
         // markers: true,
         scrub: true
     },
-    duration: 0.5,
+    // duration: 5,
     backgroundColor: "#1D2F57",
 })
+
+
+
+
+
 // MUDAR SHADOW DOS CARDS
-
-// gsap.to('.border', { 
-//     scrollTrigger: {
-//         trigger: ".noite",
-//         start: "center bottom",
-//         end: "bottom center",
-//         // markers: true,
-//         scrub: true
-// },
-// duration: 0.5,
-// boxShadow: "#fff 3px 3px 7px 2px",
-// })
-
-
-
-
-
-gsap.fromTo('.border', {
-    boxShadow: "#1D2F57 0px 0px 0px 0px",
-}, {
+gsap.from('.border', {
+    
     scrollTrigger: {
     trigger: ".manha",
-    start: "top center",
-    end: "top center",
-    markers: true,
+    start: "top bottom",
+    end: "top top",
+    // markers: true,
     scrub: true
     },
-    duration: 1,
-    boxShadow: "#1D2F57 -3px -3px 7px 4px",
+    duration: 5,
+    boxShadow: "#1D2F57 0px 0px 0px 0px",
+    ease: "Power4. easeOut",
 })
-gsap.to('.border', {
+gsap.fromTo('.border', {
+    boxShadow: "#1D2F57 -4px -4px 6px 3px",
+ }, {
     scrollTrigger: {
         trigger: ".tarde",
         start: "center bottom", //center-> posição do alvo// bottom -> posição do ecra para dar match
@@ -227,11 +180,11 @@ gsap.to('.border', {
         // markers: true,
         scrub: true
     },
-    duration: 0.5,
-    boxShadow: "#E8CC75 5px -3px 7px 7px",
+    duration: 3,
+    boxShadow: "#E8CC75 5px -5px 10px 2px",
 })
 gsap.fromTo('.border', {                
-    boxShadow: "#E8CC75 5px -3px 7px 7px",
+    boxShadow: "#E8CC75 5px -5px 10px 2px",
 }, {
     scrollTrigger: {
         trigger: ".noite",
@@ -241,5 +194,5 @@ gsap.fromTo('.border', {
         scrub: true
     },
     duration: 0.5,
-    boxShadow: "#fff 3px 3px 7px 2px",
+    boxShadow: "#fff 4px 2px 10px 1px",
 })

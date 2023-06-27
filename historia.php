@@ -1,11 +1,9 @@
 <?php require_once("inicio.php") ?>
+<?php require_once("nav-bar.php") ?>
 
 <div class="fundo-claro">
-    <?php require_once("nav-bar.php") ?>
-    <div class="uk-margin-large-bottom">
-        <div class="uk-position-relative recuar" uk-sticky="offset: 70">
-            <img class="onda-azul-topo uk-position-top" src="img/nav-bar/onda-topo-azul.png" alt="">
-        </div>
+    <div class="recuar" uk-sticky="offset: 70">
+            <img class="onda-azul-topo uk-position-top" src="img/nav-bar/onda-topo-azul.png"  alt="">
     </div>
     <video class="video" autoplay>
         <source src="img/historia/historia.mp4" type="video/mp4">
@@ -26,30 +24,5 @@
     <img class="uk-position-bottom linhas" src="img/historia/linhas.png" alt="">
 </div>
 
-<?php require_once("rodape.php") ?>
-
-<script>
-    //Nav bar invisivel após load
-    const teste = document.getElementById("topo");
-
-    function tirar() {
-        teste.remove();
-    };
-    window.onload = tirar;
-
-
-    const topo = gsap.timeline({
-        paused: true,
-        reversed: true
-    });
-
-    window.onscroll = function() {
-            if (scrollY == 0) {
-                teste.remove();
-                console.log("Estás no topo");
-            } else {
-</script><?php require_once("nav-bar.php") ?><script>
-    console.log("Não estás");
-    }
-    }
+<?php require_once("footer.php") ?>
 </script>
