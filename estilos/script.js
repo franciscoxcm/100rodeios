@@ -47,6 +47,7 @@ menu.addEventListener('click', function () {
             window.onscroll = function () {
                 window.scrollTo(scrollLeft, scrollTop);
             };
+        console.log(body);    
     } else {
         tl1.reverse();   
         tl2.reverse();  
@@ -55,7 +56,7 @@ menu.addEventListener('click', function () {
         document.getElementById("fundo-escuro").remove();
         //ativar scrll
         window.onscroll = function () { };
-        
+        document.getElementById("input").remove;
     }
 })
 

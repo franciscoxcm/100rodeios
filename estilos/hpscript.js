@@ -46,9 +46,26 @@ gsap.fromTo("#show-after", {
     opacity:1,
     
 })
+
+
+//*****************************************************************************************Bloquear scroll
+scrollTop =
+window.pageYOffset || document.documentElement.scrollTop;
+scrollLeft =
+window.pageXOffset || document.documentElement.scrollLeft,
+
+// if any scroll is attempted,
+// set this to the previous value
+window.onscroll = function () {
+    window.scrollTo(scrollLeft, scrollTop);
+};
+setTimeout(()=> {
+    window.onscroll = function () { };
+ }
+ ,5000);
+
+
 // NAVBAR***********************************************************************
-
-
 gsap.from('.nav-bar', { duration: 1, y: '-100%', ease: "circ.in",delay: 4 });//
 gsap.from('.icons', { duration: 1, opacity: 0, delay: 5 });
 gsap.from('.onda-azul-topo', { duration: 1, height: 0, delay: 5 });
@@ -58,8 +75,55 @@ gsap.from('.onda-azul-topo', { duration: 1, height: 0, delay: 5 });
 
 
 
+//**********************************************************************************************************MUDAR A COR DO CORPO
+gsap.to('.corpo', {
+    scrollTrigger: {
+    trigger: ".manha",
+    start: "top center",
+    end: "top center",
+    // markers: true,
+    scrub: true
+    },
+    duration: 0.5,
+    backgroundColor: "#E8CC75",
+})
+gsap.to('.corpo', {
+    scrollTrigger: {
+        trigger: ".tarde",
+        start: "top bottom", //center-> posição do alvo// bottom -> posição do ecra para dar match
+        end: "bottom center",
+        // markers: true,
+        scrub: true
+    },
+    // duration: 3,
+    backgroundColor: "#D19B43",
+})
+gsap.fromTo('.corpo', {                
+        backgroundColor: "#D19B43",
+}, {
+    scrollTrigger: {
+        trigger: ".noite",
+        start: "center bottom",
+        end: "bottom center",
+        // markers: true,
+        scrub: true
+    },
+    // duration: 5,
+    backgroundColor: "#1D2F57",
+})
 
-//MUDAR O ICON DO SOL/LUA
+
+
+
+
+
+
+
+
+
+
+
+//******************************************************************************************************MUDAR O ICON DO SOL/LUA
 //FAZ DESAPARECER O NASCER DO SOL QUANDO CHEGA A TARDE
 gsap.to('#nascer-sol', {
     scrollTrigger: {
@@ -115,48 +179,19 @@ scrollTrigger: {
 
 
 
-// MUDAR A COR DO CORPO
-gsap.to('.corpo', {
-    scrollTrigger: {
-    trigger: ".manha",
-    start: "top center",
-    end: "top center",
-    // markers: true,
-    scrub: true
-    },
-    duration: 0.5,
-    backgroundColor: "#E8CC75",
-})
-gsap.to('.corpo', {
-    scrollTrigger: {
-        trigger: ".tarde",
-        start: "top bottom", //center-> posição do alvo// bottom -> posição do ecra para dar match
-        end: "bottom center",
-        // markers: true,
-        scrub: true
-    },
-    // duration: 3,
-    backgroundColor: "#D19B43",
-})
-gsap.fromTo('.corpo', {                
-        backgroundColor: "#D19B43",
-}, {
-    scrollTrigger: {
-        trigger: ".noite",
-        start: "center bottom",
-        end: "bottom center",
-        // markers: true,
-        scrub: true
-    },
-    // duration: 5,
-    backgroundColor: "#1D2F57",
-})
 
 
 
 
 
-// MUDAR SHADOW DOS CARDS
+
+
+
+
+
+
+//**************************************************************************************************************MUDAR SHADOW DOS CARDS
+//MANHA
 gsap.from('.border', {
     
     scrollTrigger: {
@@ -166,17 +201,13 @@ gsap.from('.border', {
     // markers: true,
     scrub: true
     },
-<<<<<<<< HEAD:estilos/hpscript.js
     duration: 5,
     boxShadow: "#1D2F57 0px 0px 0px 0px",
     ease: "Power4. easeOut",
-========
-    duration: 1,
-    boxShadow: "#1D2F57 -3px -3px 7px 2px",
->>>>>>>> 749ffe3761bef9fcdb77b777461250bc79a9f3da:script.js
 })
+//TARDE
 gsap.fromTo('.border', {
-    boxShadow: "#1D2F57 -4px -4px 6px 3px",
+    boxShadow: "#1D2F57 -3px -3px 7px 2px",
  }, {
     scrollTrigger: {
         trigger: ".tarde",
@@ -185,19 +216,12 @@ gsap.fromTo('.border', {
         // markers: true,
         scrub: true
     },
-<<<<<<<< HEAD:estilos/hpscript.js
     duration: 3,
-    boxShadow: "#E8CC75 5px -5px 10px 2px",
-})
-gsap.fromTo('.border', {                
-    boxShadow: "#E8CC75 5px -5px 10px 2px",
-========
-    duration: 0.5,
     boxShadow: "#E8CC75 3px -3px 7px 5px",
 })
+//NOITE
 gsap.fromTo('.border', {                
     boxShadow: "#E8CC75 3px -3px 7px 5px",
->>>>>>>> 749ffe3761bef9fcdb77b777461250bc79a9f3da:script.js
 }, {
     scrollTrigger: {
         trigger: ".noite",
@@ -207,10 +231,5 @@ gsap.fromTo('.border', {
         scrub: true
     },
     duration: 0.5,
-<<<<<<<< HEAD:estilos/hpscript.js
     boxShadow: "#fff 4px 2px 10px 1px",
 })
-========
-    boxShadow: "#fff 2px 2px 7px 1px",
-})
->>>>>>>> 749ffe3761bef9fcdb77b777461250bc79a9f3da:script.js
